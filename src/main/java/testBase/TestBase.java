@@ -27,8 +27,8 @@ public class TestBase {
 		
 		DriverFactory.getInstance().setDriver(browserFactory.createBrowserInstance(browser));
 		DriverFactory.getInstance().getDriver().manage().window().maximize();
-		DriverFactory.getInstance().getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		DriverFactory.getInstance().getDriver().navigate().to(baseURL);
+		DriverFactory.getInstance().getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 
 	@AfterMethod
@@ -46,13 +46,12 @@ public class TestBase {
 	}
 	
 	/*
-	 * @BeforeSuite public void DockerUp() throws InterruptedException { new
-	 * reusableComponents.CommandPromptUtils("docker-compose up -d");
-	 * Thread.sleep(15000); }
-	 */
-	
-	/*
-	 * @AfterSuite public void DockerDown() { new
-	 * reusableComponents.CommandPromptUtils("docker-compose down"); }
+	 @BeforeSuite public void DockerUp() throws InterruptedException {
+		 new reusableComponents.CommandPromptUtils("docker-compose up -d");
+	 Thread.sleep(20000); }
+	 
+
+	 @AfterSuite public void DockerDown() { new
+	 reusableComponents.CommandPromptUtils("docker-compose down"); }
 	 */
 }

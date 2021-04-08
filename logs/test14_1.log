@@ -23,3 +23,33 @@
 ************** Execution Started : test14**************
 
 [INFO ] 2020-12-09 17:30:46.837 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox
+[INFO ] 2021-03-01 12:13:20.611 - testBase.MyLogger:startTestCase 16==>  
+
+************** Execution Started : test14**************
+
+[INFO ] 2021-03-01 12:13:20.687 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox
+[INFO ] 2021-03-01 12:28:12.330 - testBase.MyLogger:startTestCase 16==>  
+
+************** Execution Started : test14**************
+
+[INFO ] 2021-03-01 12:28:12.355 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox
+[INFO ] 2021-03-01 13:38:44.823 - testBase.MyLogger:startTestCase 16==>  
+
+************** Execution Started : test14**************
+
+[INFO ] 2021-03-01 13:38:45.027 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox
+[INFO ] 2021-03-01 15:36:28.516 - testBase.MyLogger:startTestCase 16==>  
+
+************** Execution Started : test14**************
+
+[INFO ] 2021-03-01 15:36:28.543 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox
+[INFO ] 2021-03-02 10:11:46.824 - testBase.MyLogger:startTestCase 16==>  
+
+************** Execution Started : test14**************
+
+[INFO ] 2021-03-02 10:12:06.837 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox
+[INFO ] 2021-03-02 10:41:53.499 - testBase.MyLogger:startTestCase 16==>  
+
+************** Execution Started : test14**************
+
+[INFO ] 2021-03-02 10:41:53.648 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox

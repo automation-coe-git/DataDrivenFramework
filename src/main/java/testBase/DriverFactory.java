@@ -7,6 +7,7 @@ public class DriverFactory {
 	ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 
 	private DriverFactory() {
+		
 	}
 
 	private static DriverFactory instance = new DriverFactory();

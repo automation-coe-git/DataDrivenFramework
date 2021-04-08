@@ -38,3 +38,8 @@
 ************** Execution Started : test8**************
 
 [INFO ] 2020-12-08 17:34:23.104 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox
+[INFO ] 2021-03-01 12:43:06.381 - testBase.MyLogger:startTestCase 16==>  
+
+************** Execution Started : test8**************
+
+[INFO ] 2021-03-01 12:43:06.444 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox

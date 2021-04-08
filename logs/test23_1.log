@@ -8,3 +8,18 @@
 ************** Execution Started : test23**************
 
 [INFO ] 2020-12-08 17:28:05.803 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox
+[INFO ] 2021-03-01 12:21:39.177 - testBase.MyLogger:startTestCase 16==>  
+
+************** Execution Started : test23**************
+
+[INFO ] 2021-03-01 12:21:39.235 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox
+[INFO ] 2021-03-01 12:37:32.936 - testBase.MyLogger:startTestCase 16==>  
+
+************** Execution Started : test23**************
+
+[INFO ] 2021-03-01 12:37:32.985 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox
+[INFO ] 2021-03-01 13:43:34.883 - testBase.MyLogger:startTestCase 16==>  
+
+************** Execution Started : test23**************
+
+[INFO ] 2021-03-01 13:43:34.942 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox

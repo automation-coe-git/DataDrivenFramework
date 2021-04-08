@@ -16,7 +16,7 @@ public class ExtentReportNG {
 		String actualDate = format.format(date);
 		reusableComponents.ReadConfig readconfig = new reusableComponents.ReadConfig("./Configuration/config.properties");
 		String baseURL = readconfig.getValue("baseURL");
-		String reportPath = System.getProperty("user.dir")+"/Reports/"+TestBase.staticBrowser+"/ExecutionReport_"+actualDate+".html";	
+		String reportPath = System.getProperty("user.dir")+"/Reports/"+TestBase.staticBrowser+"/ExecutionReport.html";	
 		ExtentSparkReporter sparkReport = new ExtentSparkReporter(reportPath);
 	
 	    extent = new ExtentReports();
