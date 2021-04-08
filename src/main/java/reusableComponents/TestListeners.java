@@ -3,6 +3,7 @@ package reusableComponents;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.Base64;
 import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
@@ -51,7 +52,17 @@ public class TestListeners implements ITestListener{
 	public void onTestFailure(ITestResult result) {
 		ExtentFactory.getInstance().getExtent().log(Status.FAIL, "Test Case: "+result.getMethod().getMethodName()+ " is Failed.");
 		ExtentFactory.getInstance().getExtent().log(Status.FAIL, result.getThrowable());
+		String Base64StringofScreenshot="";
 		File src = ((TakesScreenshot)DriverFactory.getInstance().getDriver()).getScreenshotAs(OutputType.FILE);
+		byte[] fileContent = null;
+		try {
+			fileContent = FileUtils.readFileToByteArray(src);
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+	    Base64StringofScreenshot = "data:image/png;base64,"+Base64.getEncoder().encodeToString(fileContent);
+
 		SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyy HH-mm-ss");
 		Date date = new Date();
 		String actualDate = format.format(date);
@@ -65,10 +76,11 @@ public class TestListeners implements ITestListener{
 			e.printStackTrace();
 		}
 		try {
-			ExtentFactory.getInstance().getExtent().addScreenCaptureFromPath(screenshotPath, "Test case failure screenshot");
+			ExtentFactory.getInstance().getExtent().addScreenCaptureFromBase64String(Base64StringofScreenshot, "Test case failure screenshot");
+			//ExtentFactory.getInstance().getExtent().addScreenCaptureFromPath(screenshotPath, "Test case failure screenshot");
 			ExtentFactory.getInstance().removeExtentObject();
 
-		} catch (IOException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
