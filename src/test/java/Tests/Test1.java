@@ -34,7 +34,7 @@ public class Test1 extends TestBase {
 		Assert.assertEquals(loginPage.getBtnName(), "Cancel");	
 	}
 	
-	@Test(enabled=true)
+	@Test(enabled=false)
 	public void LoginFailed() throws IOException, InterruptedException, ParseException {
 		MyLogger.startTestCase(new Throwable().getStackTrace()[0].getMethodName());
 		loginPage.clickLogin();
