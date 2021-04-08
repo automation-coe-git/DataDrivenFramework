@@ -20,6 +20,7 @@ public class LoginPage extends TestBase {
 
 	public void clickLogin() {
 		MyLogger.info("Clicking on Login Button");
+		
 		DriverFactory.getInstance().getDriver().findElement(btnLogin).click();
 	}
 
