@@ -16,7 +16,7 @@ public class Test1 extends TestBase {
 	LoginPage loginPage = new LoginPage();
 	
 	@Test(enabled=true)
-	public void test1() throws IOException, InterruptedException, ParseException {
+	public void LoginPassed() throws IOException, InterruptedException, ParseException {
 		MyLogger.startTestCase(new Throwable().getStackTrace()[0].getMethodName());
 		loginPage.clickLogin();
 		loginPage.setUsername("admin");
@@ -26,7 +26,7 @@ public class Test1 extends TestBase {
 	}
 	
 	@Test(enabled=true)
-	public void test2() throws IOException, InterruptedException, ParseException {
+	public void LoginFailed() throws IOException, InterruptedException, ParseException {
 		MyLogger.startTestCase(new Throwable().getStackTrace()[0].getMethodName());
 		loginPage.clickLogin();
 		loginPage.setUsername("admin");
