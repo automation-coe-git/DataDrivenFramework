@@ -11,6 +11,5 @@
 		<classes>
 			<class name="Tests.Test1" />
 		</classes>
-		
 	</test>
 </suite> 
